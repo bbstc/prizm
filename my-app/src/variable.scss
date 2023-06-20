@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,700&display=swap");
+$poppins: "Poppins", sans-serif;
+
+$primary: rgb(208, 24, 60);
+$light: #ffff;
+$brown:#482307;
+$font_dark: #333333;
+$dark: rgb(29, 29, 29);
+$blue: rgba(133, 149, 189, 1);
+
+@mixin breakpoint($point) {
+  @if $point == sm {
+    // 576px
+    @media (min-width: 1em) {
+      @content;
+    }
+  }
+
+  @if $point == md {
+    // 768px
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+
+  @if $point == lg {
+    // 1200px
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
